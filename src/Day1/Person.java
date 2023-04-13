@@ -11,6 +11,7 @@ public class Person {
     private int age;
     private String gender;
     private String height;
+    private String ethnicity;
     private BigDecimal salary;
     private Boolean isStudent;
     private LocalDateTime birthday;
