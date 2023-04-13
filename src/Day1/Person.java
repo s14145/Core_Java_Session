@@ -10,6 +10,7 @@ public class Person {
     private String name;
     private int age;
     private String gender;
+    private String height;
     private BigDecimal salary;
     private Boolean isStudent;
     private LocalDateTime birthday;
