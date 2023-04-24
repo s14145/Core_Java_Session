@@ -1,6 +1,6 @@
 package Day2;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Review {
 
@@ -8,7 +8,7 @@ public class Review {
     long numberOfStars;
     long userId;
     boolean isVerifiedPurchase;
-    LocalDateTime reviewDate;
+    LocalDate reviewDate;
     String reviewDetail;
     long numberOfLikes;
     long productId;
