@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class Person {
 
     /* States */
-    private Long person_Id;
+    private long person_Id;
     private String name;
     private int age;
     private String gender;
