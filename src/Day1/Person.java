@@ -13,6 +13,6 @@ public class Person {
     private String height;
     private String ethnicity;
     private BigDecimal salary;
-    private Boolean isStudent;
+    private boolean isStudent;
     private LocalDateTime birthday;
 }

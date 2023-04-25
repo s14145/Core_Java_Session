@@ -6,7 +6,7 @@ public class Slider {
 
     String imageURL;
     String shopButtonURL;
-    Boolean isShopButtonEnabled;
+    boolean isShopButtonEnabled;
     LocalDate startDate;
     LocalDate endDate;
 
