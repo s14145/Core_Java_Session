@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Lottery Application to generate 6 random numbers
+ * Lottery Application to generate 6 different random numbers in which 5 different random numbers
+ * should be smaller than 75 and the last one number should be smaller than 25
  *
  * @author sudhilgauchan
  */
@@ -20,10 +21,10 @@ public class GenRandLotteryApplication {
      */
     public List<Integer> getRandomNumbersUsingMathRandom(){
 
-        // Used Linked List to store generated 6 random numbers
+        // Used Linked List to store generated 6 different random numbers
         List<Integer> randomNumbers = new LinkedList<>();
 
-        // Generating 5 random numbers smaller than 75
+        // Generating 5 different random numbers smaller than 75
         int min = 0, max = 75, max1 = 25;
         int range = max - min + 1;
         Integer fiveRandomNumbers = 0;
@@ -53,7 +54,7 @@ public class GenRandLotteryApplication {
         int[] arr = new int[6];
         Random rand = new Random();
 
-        //Generating 5 random numbers smaller than 75
+        //Generating 5 different random numbers smaller than 75
         for (int i = 0; i < 5; i++) {
             arr[i] = rand.nextInt(range) + min;
         }
