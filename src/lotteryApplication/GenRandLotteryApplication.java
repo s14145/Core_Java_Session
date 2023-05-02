@@ -14,17 +14,17 @@ public class GenRandLotteryApplication {
         int min = 0;
         int max = 75;
         int range = max - min + 1;
-        int fiveRandomNumbers = 0;
+        Integer fiveRandomNumbers = 0;
 
         for(int i = 0; i < 5; i++) {
-            fiveRandomNumbers = Integer.valueOf((int) Math.floor(Math.random() * range + min));
+            fiveRandomNumbers = Integer.valueOf((int) Math.floor(Math.random() * range) + min);
             randomNumbers.add(fiveRandomNumbers);
         }
 
         // Generating the last one number smaller than 25
         int max1 = 25;
         int range1 = max1 - min + 1;
-        Integer sixthRandomNumber = Integer.valueOf((int) Math.floor(Math.random() * range1 + min));
+        Integer sixthRandomNumber = Integer.valueOf((int) Math.floor(Math.random() * range1) + min);
 
         randomNumbers.add(sixthRandomNumber);
         return randomNumbers;
