@@ -3,9 +3,20 @@ package lotteryApplication;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Lottery Application to generate 6 random numbers
+ *
+ * @author sudhilgauchan
+ */
 public class GenRandLotteryApplication {
 
-    public List<Integer> getRandomNumber(){
+    /**
+     * This method is used to generate random numbers.
+     *
+     * @param
+     * @return List<Integer> This returns list of integer
+     */
+    public List<Integer> getRandomNumbers(){
 
         // Used Linked List to store generated 6 random numbers
         List<Integer> randomNumbers = new LinkedList<>();
@@ -35,7 +46,7 @@ public class GenRandLotteryApplication {
     public static void main(String[] args) {
 
         GenRandLotteryApplication genRandLotteryApplication = new GenRandLotteryApplication();
-        System.out.println("Today's Lottery winning numbers are: " + genRandLotteryApplication.getRandomNumber());
+        System.out.println("Today's Lottery winning numbers are: " + genRandLotteryApplication.getRandomNumbers());
 
     }
 }
