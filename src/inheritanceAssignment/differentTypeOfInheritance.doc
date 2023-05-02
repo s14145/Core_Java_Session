@@ -1,0 +1,6 @@
+The different types of inheritance are as follows:
+
+1. Single Inheritance: A child class is inheriting states and behaviors from only one parent class. For e.g.: Dog class extends Animal class. Dog is child class of Animal parent class.
+2. Multi-level Inheritance: A class inheriting states and behaviors from a class which also is inheriting from another class. For e.g.: Child class extends Father class and Father class extends GrandFather class
+3. Hierarchical Inheritance:  If multiple classes are inheriting from a single parent class then it is a hierarchical inheritance. For e.g.: Square class and Rectangle class extends Shape class
+4. Hybrid Inheritance: It is a combination of two or more types of inheritance. For e.g.: Honda class and Toyota class extends Car class which is hierarchical inheritance. Car class extends Vehicle class which is single inheritance. Combination of hierarchical and single inheritance formed hybrid inheritance.
