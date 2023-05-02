@@ -1,9 +1,12 @@
 Difference between Dependency, Aggregation and Inheritance:
-1. Dependency: It means one class is dependent on another class. If two classes are dependent on each other then we cannot
-create an object of one class without having object of dependent class. For eg: There is dependency between Student class and Address class.
+
+1. Dependency: It describes the relationship between two classes where one class (client) uses the other class (supplier).
+If two classes are dependent on each other then we cannot create an object of one class without having object of its
+dependent class. For eg: There is dependency between Student class and Address class.
 2. Aggregation: It is a weaker form of association in which both entities can survive individually which means ending one entity will
 not affect another entity. It represents "Has-A" relationship. For eg: Cart Has-A product
-3. Inheritance: It means when one class inherits properties and behaviors of parent class. It represents "Is-A" relationship. For eg: Apple is a Fruit.
+3. Inheritance: It means when child class inherits properties and behaviors of parent class. It represents "Is-A" relationship.
+For eg: Apple is a Fruit.
 
 
 
