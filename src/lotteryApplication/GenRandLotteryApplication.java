@@ -68,6 +68,9 @@ public class GenRandLotteryApplication {
 
     public static void main(String[] args) {
 
+        System.out.println("GOOD LUCK FOR TODAY'S LOTTERY - PLAY WISELY " + "\uD83D\uDE00");
+        System.out.println("\n");
+
         // Approach 1 using Math.random() method
         GenRandLotteryApplication genRandLotteryApplication = new GenRandLotteryApplication();
         System.out.println("Using Math.random() method:");
