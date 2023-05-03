@@ -21,7 +21,7 @@ public class GenRandLotteryApplication {
      */
     public List<Integer> getRandomNumbersUsingMathRandom(){
 
-        // Used Linked List to store generated 6 different random numbers
+        // Used LinkedList to store generated 6 different random numbers
         List<Integer> randomNumbers = new LinkedList<>();
 
         // Generating 5 different random numbers smaller than 75
@@ -43,15 +43,19 @@ public class GenRandLotteryApplication {
     }
 
     /**
-     * This method is used to generate random numbers using Random class.
+     * This static method is used to generate random numbers using Random class.
      *
      * @param
      * @return int[] This returns int array
      */
     public static int[] getRandomNumbersUsingRandomClass() {
+
+        // Using int array of size 6 to store generated 6 different random numbers
+        int[] arr = new int[6];
+
         int min = 0, max = 75, max1 = 25;
         int range = max - min + 1;
-        int[] arr = new int[6];
+
         Random rand = new Random();
 
         //Generating 5 different random numbers smaller than 75
