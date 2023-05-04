@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.TimeZone;
 
 /**
- *  This application calculates age based on user input using Date class and SimpleDateFormat class.
+ *  This application calculates age based on user input Date Of Birth (DOB) using Date class and SimpleDateFormat class.
  *
  *  @author sudhilgauchan
  */
@@ -23,10 +23,10 @@ public class AgeCalcUsingSimpleDateFormat {
     private static final String NEWYORK_TIMEZONE = "America/New_York";
 
     /**
-     *  This static method validates user input date.
-     *  Checks for invalid scenarios such as user input Date of Birth is future date or matches current date.
+     *  This static method validates user input Date Of Birth (DOB).
+     *  Checks for invalid scenarios such as user input Date Of Birth (DOB) is future date or matches current date.
      *
-     * @param birthDate the user input date
+     * @param birthDate the user input Date Of Birth (DOB)
      * @param currentDate the system current date
      * @return boolean the value true if valid or false otherwise
      */
@@ -52,7 +52,7 @@ public class AgeCalcUsingSimpleDateFormat {
         // Prompt user to enter Date of Birth
         System.out.print("Enter Date of Birth in 'YYYY-MM-DD' format: ");
 
-        // Using Scanner class
+        // Using Scanner class to process user input Date Of Birth (DOB)
         Scanner scanner = null;
         try{
             scanner = new Scanner(System.in);
@@ -61,13 +61,13 @@ public class AgeCalcUsingSimpleDateFormat {
             // Entered Date of Birth in milliseconds
             long birthDateMillis = birthDate.getTime();
 
-            // Using Date Class for current date
+            // Using Date Class for system current date
             Date date = new Date();
             Date currentDate = sdf.parse(sdf.format(date));
             // Current date in milliseconds
             long currentDateMills = currentDate.getTime();
 
-            // Subtracting Date of Birth from current date in milliseconds
+            // Subtracting Date of Birth (DOB) from current date in milliseconds
             long diffMillis = (currentDateMills - birthDateMillis);
             if(isValidBirthDate(birthDate, currentDate)) {
 
@@ -75,10 +75,10 @@ public class AgeCalcUsingSimpleDateFormat {
 
                 System.out.println("Your age is " + year + " Year(s) old.");
             }else{
-                System.out.println("Entered Date of Birth is future date or current date or invalid. Please enter a valid Date of Birth.");
+                System.out.println("Entered Date of Birth (DOB) is future date or current date or invalid date. Please enter a valid Date of Birth (DOB).");
             }
         }catch(Exception ex) {
-            System.out.println("Entered Date of Birth is in invalid format.");
+            System.out.println("Entered Date of Birth (DOB) is in invalid format.");
             ex.printStackTrace();
         }finally {
             // Closing scanner resource to avoid memory leaks

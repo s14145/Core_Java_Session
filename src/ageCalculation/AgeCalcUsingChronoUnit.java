@@ -16,9 +16,9 @@ public class AgeCalcUsingChronoUnit {
     private static final String PATTERN = "yyyy-MM-dd";
 
     /**
-     *  This static method calculates age comparing custom date and system current date using ChronoUnit Enum.
+     *  This static method calculates age comparing custom date (DOB) and system current date using ChronoUnit Enum.
      *
-     * @param birthDate the custom date
+     * @param birthDate the custom date (DOB)
      * @param currentDate the system current date
      * @return nothing
      */
@@ -28,10 +28,10 @@ public class AgeCalcUsingChronoUnit {
     }
 
     /**
-     *  This static method validates custom date.
-     *  Checks for invalid scenarios such as custom Date of Birth is future date or matches current date.
+     *  This static method validates custom date (DOB).
+     *  Checks for invalid scenarios such as custom Date of Birth (DOB) is future date or matches current date.
      *
-     * @param birthDate the custom date
+     * @param birthDate the custom date (DOB)
      * @param currentDate the system current date
      * @return boolean the value true if valid or false otherwise
      */
@@ -55,16 +55,16 @@ public class AgeCalcUsingChronoUnit {
             LocalDate customBirthDate = LocalDate.of(1990,01,22);
             LocalDate birthDate = LocalDate.parse(customBirthDate.toString(), formatter);
 
-            // System current date
+            // Using LocalDate class for system current date
             LocalDate date = LocalDate.now();
             LocalDate currentDate = LocalDate.parse(date.toString(), formatter);
             if (isValidBirthDate(birthDate, currentDate)) {
                 calculateAge(birthDate, currentDate);
             }else{
-                System.out.println("Date of Birth is future date or current date or invalid. Please provide valid Date of Birth.");
+                System.out.println("Date of Birth (DOB) is future date or current date or invalid. Please provide valid Date of Birth (DOB).");
             }
         }catch(Exception ex) {
-            System.out.println("Date of Birth is in invalid format.");
+            System.out.println("Date of Birth (DOB) is in invalid format.");
             ex.printStackTrace();
         }
     }
