@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 /**
- *  This application calculates age based on custom date using ChronoUnit Enum.
+ *  This application calculates age based on custom date (DOB) using ChronoUnit Enum.
  *
  *  @author sudhilgauchan
  */
@@ -51,7 +51,7 @@ public class AgeCalcUsingChronoUnit {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(PATTERN);
 
         try{
-            // Custom Date of Birth
+            // Custom Date of Birth (DOB)
             LocalDate customBirthDate = LocalDate.of(1990,01,22);
             LocalDate birthDate = LocalDate.parse(customBirthDate.toString(), formatter);
 

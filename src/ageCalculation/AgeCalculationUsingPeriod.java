@@ -50,13 +50,14 @@ public class AgeCalculationUsingPeriod {
         // Using DateTimeFormatter class
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(PATTERN);
 
-        // Prompt user to enter Date of Birth
+        // Prompt user to enter Date of Birth (DOB)
         System.out.print("Enter Date of Birth in 'YYYY-MM-DD' format: ");
 
         // Using Scanner class to process user input Date Of Birth (DOB)
         Scanner scanner = null;
         try{
             scanner = new Scanner(System.in);
+            // Entered user input Date of Birth (DOB)
             String enteredBirthDate = scanner.nextLine();
             LocalDate birthDate = LocalDate.parse(enteredBirthDate, formatter);
 

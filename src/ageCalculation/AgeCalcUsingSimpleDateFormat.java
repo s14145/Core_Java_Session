@@ -49,7 +49,7 @@ public class AgeCalcUsingSimpleDateFormat {
         TimeZone newYorkTimeZone = TimeZone.getTimeZone(NEWYORK_TIMEZONE);
         sdf.setTimeZone(newYorkTimeZone);
 
-        // Prompt user to enter Date of Birth
+        // Prompt user to enter Date of Birth (DOB)
         System.out.print("Enter Date of Birth in 'YYYY-MM-DD' format: ");
 
         // Using Scanner class to process user input Date Of Birth (DOB)
@@ -58,7 +58,7 @@ public class AgeCalcUsingSimpleDateFormat {
             scanner = new Scanner(System.in);
             String enteredBirthDate = scanner.nextLine();
             Date birthDate = sdf.parse(enteredBirthDate);
-            // Entered Date of Birth in milliseconds
+            // Entered user input Date of Birth (DOB) in milliseconds
             long birthDateMillis = birthDate.getTime();
 
             // Using Date Class for system current date
