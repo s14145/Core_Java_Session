@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SalesStaticVariableFunction {
 
     // Static variable salesTaxForTexas
-    private static double salesTaxForTexas = 6.25;
+    private static final double salesTaxForTexas = 6.25;
 
     // Non static variable salesAmount
     private double salesAmount;
