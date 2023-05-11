@@ -13,7 +13,7 @@ import lombok.Value;
 @Value
 public class Employee {
 
-    private long employeeId;
+    long employeeId;
 
-    private String employeeName;
+    String employeeName;
 }
