@@ -1,0 +1,6 @@
+Annotation provides metadata to class/method. For example:
+1. @Deprecated: It means marked element is supported but not recommended to use.
+2. @Override: It means sub-class method overrides the parent class method.
+3. @Test: It means marked method can be executed as test method by JUnit.
+
+

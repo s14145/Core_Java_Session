@@ -15,19 +15,22 @@ public final class Student {
     // private and final data member
     private final String name;
 
-    // Parameterized constructor
+    /**
+     *  Parameterized constructor
+     *
+     */
     public Student(String name) {
         this.name = name;
     }
 
     // Getter Method
+
+    /**
+     *  This is a getter method.
+     *
+     * @return String The name of student
+     */
     public String getName() {
         return name;
-    }
-
-    public static void main(String[] args) {
-        Student student = new Student("John");
-        String studentName = student.getName();
-        System.out.println(studentName);
     }
 }
