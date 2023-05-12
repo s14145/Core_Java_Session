@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/immutableAssignment/test" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/immutableAssignment/test/immutableAssignment" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/annotationAssignment/AnnotationJavaDoc" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
