@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class ArithmeticAssignment {
 
         /**
-         *  This static method performs arithmetic operation.
+         *  This method performs arithmetic operation.
          *  ( if user input number is 123 then 1+2+3= 6;
          *    if user input number 1000 then 1+0+0+0= 1)
          *
