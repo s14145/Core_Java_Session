@@ -25,6 +25,6 @@ public class WhileLoop {
 
     public static void main(String[] args) {
 
-        System.out.println("Reverse number is: " + reverseNumber(1234));
+        System.out.println("Reverse number of 1234 is : " + reverseNumber(1234));
     }
 }
