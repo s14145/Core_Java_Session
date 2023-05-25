@@ -1,6 +1,6 @@
 String Immutable class
 Merits:
-1. It is thread safe to be used in multi-threaded environment which means only one thread is able to access string resource at a time.
+1. It is thread safe to be used in multi-threaded environment which means multiple threads can work with immutable string.
 2. String constant pool (SCP) is possible as string is immutable class which is used by JVM to optimize memory management.
 3. String is a popular data type used heavily with HashMap data structure because of its immutable characteristics.
 
