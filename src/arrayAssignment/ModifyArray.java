@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class ModifyArray {
 
     /**
-     * This static method modifies array by deleting element traversing using enhanced for loop
+     * This static method modifies array by deleting element traversing using Enhanced for-loop
      *
      * @param arr The array of int element
      * @return int[] This returns int array
@@ -39,6 +39,7 @@ public class ModifyArray {
 
         // Approach 2 Java 8 Stream API filter method
         int[] arr = new int[]{2,4,6,8};
+        // Deleting element 4 from array
         int[] new_array = Arrays.stream(arr).filter(x -> x != 4).toArray();
         System.out.println(Arrays.toString(new_array));
     }
