@@ -21,7 +21,7 @@ public class ModifyArray {
         // Delete element 5 from array
         int deleteElement = 5;
         int j = 0;
-        // Using enhanced for loop
+        // Using Enhanced for-loop
         for(int a: arr){
             if(a != deleteElement){
                 new_arr[j] = a;
@@ -39,7 +39,7 @@ public class ModifyArray {
 
         // Approach 2 Java 8 Stream API filter method
         int[] arr = new int[]{2,4,6,8};
-        // Deleting element 4 from array
+        // Delete element 4 from array
         int[] new_array = Arrays.stream(arr).filter(x -> x != 4).toArray();
         System.out.println(Arrays.toString(new_array));
     }
