@@ -15,15 +15,15 @@ public class ModifyArray {
      * @param arr The array of int element
      * @return int[] This returns int array
      */
-    public static int[] deleteArray(int[] arr){
+    public static int[] deleteElementFromArray(int[] arr){
         int[] new_arr = new int[arr.length - 1];
 
-        // Delete value 5 from array
-        int deleteValue = 5;
+        // Delete element 5 from array
+        int deleteElement = 5;
         int j = 0;
         // Using enhanced for loop
         for(int a: arr){
-            if(a != deleteValue){
+            if(a != deleteElement){
                 new_arr[j] = a;
                 j++;
             }
@@ -34,7 +34,7 @@ public class ModifyArray {
     public static void main(String[] args) {
 
         // Approach 1 Traversing array element using Enhanced for-loop
-        System.out.println(Arrays.toString(deleteArray(new int[] {1,2,3,4,5,6})));
+        System.out.println(Arrays.toString(deleteElementFromArray(new int[] {1,2,3,4,5,6})));
         System.out.println("##################################################");
 
         // Approach 2 Java 8 Stream API filter method
