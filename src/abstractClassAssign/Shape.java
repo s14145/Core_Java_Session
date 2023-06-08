@@ -1,7 +1,7 @@
 package abstractClassAssign;
 
 /**
- *  Abstract class is a class which cannot be instantiated.
+ *  Abstract class is a class that is declared with abstract keyword and which cannot be instantiated.
  *
  */
 public abstract class Shape {
