@@ -1,0 +1,14 @@
+Java 11 Features:
+1. Added new methods in String class such as isBlank, lines, strip, stripLeading, stripTrailing and repeat.
+2. Added readString and writeString static methods in Files class.
+3. Added local variable syntax in lambda expression
+4. Added Optional object new method isEmpty
+5. Added HTTP Client API that makes http request.
+6. Run and execute java program without compilation
+
+Java 17 Features:
+1. Added method to convert Collection to Array
+2. Sealed classes
+3. Pattern matching for switch
+4. Restore always-strict floating-point semantics
+5. enhanced pseudo-random number generator
