@@ -11,4 +11,6 @@ Java 17 Features:
 2. Sealed classes
 3. Pattern matching for switch
 4. Restore always-strict floating-point semantics
-5. enhanced pseudo-random number generator
+5. Enhanced pseudo-random number generator
+6. Deprecate the Applet API for Removal
+7. Vector API (Second Incubator)
