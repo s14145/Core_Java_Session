@@ -1,0 +1,25 @@
+19 . What is the output of executing code of class Test?
+
+public class A {
+ void m1() {
+       System.out.println("m1 in class A");
+ }
+}
+public class B extends A {
+ void m1() {
+       System.out.println("m1 in class B");
+ }
+}
+public class Test {
+public static void main(String[] args)
+{
+    B b = new B();
+     b.m1();  // This will print "m1 in class B"
+
+    A a = new A();
+     a.m1(); // This will print "m1 in class A"
+
+    A a2 = new B();
+     a2.m1(); // This will print "m1 in class B"
+  }
+}

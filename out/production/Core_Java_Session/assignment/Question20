@@ -1,0 +1,28 @@
+20. What will be the output of the following program?
+
+    public class A
+    {
+     void m1() {
+         System.out.println("m1 in class A");
+     }
+    }
+    public class B extends A
+    {
+      void m1() {
+           super.m1();
+           System.out.println("m1 in class B");
+      }
+    }
+    public class C extends B
+    {
+       void m1() {
+          System.out.println("m1 in class C");
+       }
+     }
+    public class Test {
+    public static void main(String[] args)
+    {
+       C c = new C();
+         c.m1(); // This will print "m1 in class C"
+      }
+    }
