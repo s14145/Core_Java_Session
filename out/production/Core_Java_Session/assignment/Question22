@@ -1,0 +1,17 @@
+22. Identify the error in the following code.
+    // Compilation error will be thrown
+    // Class A is final so class B shouldn't be able to extend it. We cannot have subclass of a class declared with final non-access modifier.
+
+    final class A
+    {
+     void m1() {
+         System.out.println("m1 in class A");
+     }
+    }
+    public class B extends A
+    {
+    public static void main(String[] args)
+    {
+        B b = new B();
+     }
+    }

@@ -1,0 +1,19 @@
+23. What problem will arise when the following code is compiled?
+    // Compilation error will be thrown as there is no default constructor in class A
+
+    class A {
+     public A(int a) {
+
+      }
+    }
+    public class B extends A {
+    public B() {
+
+      }
+    }
+    public class Test {
+    public static void main(String[] args)
+    {
+        B b = new B();
+      }
+    }
