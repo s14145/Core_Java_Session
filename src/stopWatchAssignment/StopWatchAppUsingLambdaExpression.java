@@ -12,7 +12,7 @@ public class StopWatchAppUsingLambdaExpression {
         SwingUtilities.invokeLater(() -> {
             AtomicInteger counter = new AtomicInteger(0);
             Timer timer1 = new Timer(1000, e ->  {
-                System.out.println(counter);
+                System.out.println(counter.get());
                 counter.getAndIncrement();
                 });
             timer1.start();
