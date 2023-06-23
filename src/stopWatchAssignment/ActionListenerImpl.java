@@ -15,7 +15,7 @@ public class ActionListenerImpl implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        counter.incrementAndGet();
         System.out.println("Counter value is: " + this.getCounterValue());
+        counter.incrementAndGet();
     }
 }

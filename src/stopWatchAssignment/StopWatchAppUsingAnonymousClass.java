@@ -19,8 +19,8 @@ public class StopWatchAppUsingAnonymousClass {
                     }
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        counter.incrementAndGet();
                         System.out.println("Counter value is: " + this.getCounterValue());
+                        counter.incrementAndGet();
                     }
                 });
                 timer1.start();
