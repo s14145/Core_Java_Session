@@ -8,6 +8,7 @@ public class StopWatchApp {
     public static void main(String[] args) {
 
         // Approach 1 Using implementation class
+        System.out.println("Stop Watch using Implementation Class: ");
         ActionListener actionListener = new ActionListenerImpl();
 
         SwingUtilities.invokeLater(new Runnable() {
