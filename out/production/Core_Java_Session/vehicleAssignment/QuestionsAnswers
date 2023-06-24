@@ -10,8 +10,20 @@ Bicycle class can also have year data member and builtBefore method to indicate 
 
 => In the Examples class, you want to define a Bicycle as follows:
 ___ newKidsBike = new Bicycle(0, 1);
-=> Which types can you use in the blank line (without causing a compile error just with this single line)?
+Which types can you use in the blank line (without causing a compile error just with this single line)?
 Ans: We can use either interface IVehicle or implementation class Bicycle in the blank line without causing compile error.
 IVehicle newKidsBike = new Bicycle(0, 1);
 Bicycle newKidsBike1 = new Bicycle(0, 1);
+
+=> Assume you defined a Car object as follows:
+IVehicle oldCar = new Car(200000, 1995, 2);
+Which methods can you call on oldCar, given the type that you gave it?
+Ans: We can call only IVehicle interface specific methods .i.e. tuneUpCost() and canCarry(int numPassengers) as we are using interface reference to hold implementation
+class object.
+
+=> Assume you defined a Car object as follows:
+Car oldCar = new Car(200000, 1995, 2);
+Which methods can you call on oldCar, given the type that you gave it?
+Ans: We can call both IVehicle interface specific methods .i.e. tuneUpCost() and canCarry(int numPassengers) and implementation class Car specific method builtBefore(int otherYear)
+as we are using implementation class reference to hold implementation class object.
 
