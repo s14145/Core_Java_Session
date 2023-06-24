@@ -1,0 +1,29 @@
+=> What methods do you need to add to each of Car and Bicycle to get this code fragment to compile (setting aside the missing constructors)?
+Ans: We need to override methods declared in IVehicle interface by providing implementation to compile the code.
+
+=> Does having a class implement an interface change how you write its constructor?
+Ans: Yes, we need to be aware that interface cannot have constructor so object of interface cannot be created.
+
+=> Should builtBefore be added to the IVehicle interface? Why or why not?
+Ans: Yes, builtBefore method should be added to the IVehicle interface as it is a common method that could be shared with IVehicle implementation classes Car and Bicycle.
+Bicycle class can also have year data member and builtBefore method to indicate if it was built before the given year.
+
+=> In the Examples class, you want to define a Bicycle as follows:
+___ newKidsBike = new Bicycle(0, 1);
+Which types can you use in the blank line (without causing a compile error just with this single line)?
+Ans: We can use either interface IVehicle or implementation class Bicycle in the blank line without causing compile error.
+IVehicle newKidsBike = new Bicycle(0, 1);
+Bicycle newKidsBike1 = new Bicycle(0, 1);
+
+=> Assume you defined a Car object as follows:
+IVehicle oldCar = new Car(200000, 1995, 2);
+Which methods can you call on oldCar, given the type that you gave it?
+Ans: We can call only IVehicle interface specific methods .i.e. tuneUpCost() and canCarry(int numPassengers) as we are using interface reference to hold implementation
+class object.
+
+=> Assume you defined a Car object as follows:
+Car oldCar = new Car(200000, 1995, 2);
+Which methods can you call on oldCar, given the type that you gave it?
+Ans: We can call both IVehicle interface specific methods .i.e. tuneUpCost() and canCarry(int numPassengers) and implementation class Car specific method builtBefore(int otherYear)
+as we are using implementation class reference to hold implementation class object.
+
