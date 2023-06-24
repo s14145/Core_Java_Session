@@ -21,7 +21,7 @@ public class Bicycle implements IVehicle{
 
     @Override
     public boolean canCarry(int numPassengers) {
-        if(numPassengers > 0  && numPassengers ==1 ){
+        if(numPassengers ==1 ){
             return true;
         }
         return false;
