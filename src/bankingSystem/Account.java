@@ -26,9 +26,10 @@ public abstract class Account implements IAccount{
     public void deposit(double amount) {
         if(amount <= 0){
             System.out.println("Invalid amount!!!");
+        }else {
+            balance += amount;
+            System.out.println("Deposited amount $" + amount + " successfully");
         }
-        balance += amount;
-        System.out.println("Deposited amount $" + amount + " successfully");
     }
 
     @Override
@@ -37,9 +38,10 @@ public abstract class Account implements IAccount{
             System.out.println("Invalid amount!!!");
         }else if(amount > balance){
             System.out.println("Unsufficient Funds!!!");
+        }else {
+            balance -= amount;
+            System.out.println("Withdraw amount $" + amount + " successful");
         }
-        balance -= amount;
-        System.out.println("Withdraw amount $" + amount + " successful");
     }
 
     @Override
