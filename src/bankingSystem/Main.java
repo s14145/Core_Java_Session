@@ -9,12 +9,12 @@ public class Main {
         System.out.println("\nYour Saving account information: ");
         System.out.println("Saving account number: " + savingAccount.getAccountNumber());
         System.out.println("Saving account balance: $" + savingAccount.getBalance());
-        System.out.println("Saving account interest rate: " + savingAccount.getSavingInterestRate());
+        System.out.println("Saving account interest rate: " + savingAccount.getSavingAccountInterestRate());
         CurrentAccount currentAccount = new CurrentAccount(1002, 5000.0);
         System.out.println("\nYour Current account information: ");
         System.out.println("Current account number: " + currentAccount.getAccountNumber());
         System.out.println("Current account balance: $" + currentAccount.getBalance());
-        System.out.println("Current account interest rate: " + currentAccount.geCurrentInterestRate());
+        System.out.println("Current account interest rate: " + currentAccount.geCurrentAccountInterestRate());
 
         bank.addAccount(savingAccount);
         bank.addAccount(currentAccount);
