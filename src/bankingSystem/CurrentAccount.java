@@ -12,13 +12,13 @@ public class CurrentAccount extends Account {
     }
 
     public double geCurrentAccountInterestRate(){
-        return CurrentAccount.CURRENT_ACCOUNT_INTEREST_RATE;
+        return CURRENT_ACCOUNT_INTEREST_RATE;
     }
 
     @Override
     public void calculateInterest() {
         double currentAccountBalance = 0.0;
         currentAccountBalance = super.getBalance() + super.getBalance() * CURRENT_ACCOUNT_INTEREST_RATE/100;
-        System.out.println("Current Account Balance: " + currentAccountBalance);
+        System.out.println("Current Account Balance: $" + currentAccountBalance);
     }
 }

@@ -12,13 +12,13 @@ public class SavingAccount extends Account {
     }
 
     public double getSavingAccountInterestRate(){
-        return SavingAccount.SAVING_ACCOUNT_INTEREST_RATE;
+        return SAVING_ACCOUNT_INTEREST_RATE;
     }
 
     @Override
     public void calculateInterest() {
         double savingAccountBalance = 0.0;
         savingAccountBalance = super.getBalance() + super.getBalance() * SAVING_ACCOUNT_INTEREST_RATE/100;
-        System.out.println("Saving Account Balance: " + savingAccountBalance);
+        System.out.println("Saving Account Balance: $" + savingAccountBalance);
     }
 }

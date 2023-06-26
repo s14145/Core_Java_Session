@@ -25,7 +25,7 @@ public class Bank {
 
     public void viewAccountBalance(){
         for(IAccount account: accountList){
-            System.out.println("Account balance: " + account.viewBalance());
+            System.out.println("Account balance: $" + account.viewBalance());
         }
     }
 }
