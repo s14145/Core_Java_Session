@@ -1,12 +1,49 @@
 package bankingSystem;
 
-public interface Account {
+public abstract class Account implements IAccount{
 
-    void deposit(double amount);
+    private int accountNumber;
 
-    void withdraw(double amount);
+    private double balance;
 
-    void calculateInterest();
+    public Account() {
+    }
 
-    double viewBalance();
+    public Account(int accountNumber, double balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    @Override
+    public void deposit(double amount) {
+        if(amount <= 0){
+            System.out.println("Invalid amount!!!");
+        }
+        balance += amount;
+        System.out.println("Deposited amount $" + amount + " successfully");
+    }
+
+    @Override
+    public void withdraw(double amount) {
+        if(amount <= 0){
+            System.out.println("Invalid amount!!!");
+        }else if(amount > balance){
+            System.out.println("Unsufficient Funds!!!");
+        }
+        balance -= amount;
+        System.out.println("Withdraw amount $" + amount + " successful");
+    }
+
+    @Override
+    public double viewBalance() {
+        return balance;
+    }
 }
