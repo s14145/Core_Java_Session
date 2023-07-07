@@ -6,7 +6,6 @@ public class Student implements Comparable<Student>{
 
     private int student_Id;
     private String student_Name;
-
     private Boolean isEnrolled;
 
 
