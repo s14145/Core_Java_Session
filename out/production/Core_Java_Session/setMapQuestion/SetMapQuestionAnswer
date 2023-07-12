@@ -1,0 +1,3 @@
+32. Why there is no set type of Map in java?
+Ans: My guess is set data structure doesn't allow duplicate values in it. Map data structure also doesn't allow duplicate key but
+allows duplicate values. Hence, there is no set type of map in java.
