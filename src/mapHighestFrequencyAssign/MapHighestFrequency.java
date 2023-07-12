@@ -15,7 +15,7 @@ public class MapHighestFrequency {
      * @param str input string
      * @return void
      */
-    private static void findHighestFrequency(String str){
+    private static void findHighestFrequencyCharacterInString(String str){
         Map<Character,Integer> map = new HashMap<>();
         char[] charArray = str.trim().toLowerCase().toCharArray();
         for(char c: charArray){
@@ -40,6 +40,6 @@ public class MapHighestFrequency {
 
     public static void main(String[] args) {
 
-        findHighestFrequency("test");
+        findHighestFrequencyCharacterInString("test");
     }
 }
