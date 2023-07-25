@@ -8,7 +8,6 @@ public class Employee {
 
     private final int employeeId;
     private final String employeeName;
-
     private final int employeeAge;
 
     public Employee(EmployeeBuilder employeeBuilder) {
@@ -33,7 +32,6 @@ public class Employee {
 
         private int employeeId;
         private String employeeName;
-
         private int employeeAge;
 
         public EmployeeBuilder() {
