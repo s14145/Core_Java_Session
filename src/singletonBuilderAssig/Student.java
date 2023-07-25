@@ -93,7 +93,7 @@ public class Student implements Cloneable, Serializable{
         System.out.println("Reflection API");
         Constructor<Student> declaredConstructor = Student.class.getDeclaredConstructor();
         declaredConstructor.setAccessible(true);
-        Student student8 = declaredConstructor.newInstance();
-        System.out.println("Hashcode of Student8 Object: " + student8.hashCode());
+        Student student7 = declaredConstructor.newInstance();
+        System.out.println("Hashcode of Student7 Object: " + student7.hashCode());
     }
 }
