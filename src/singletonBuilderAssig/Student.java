@@ -10,6 +10,8 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class Student implements Cloneable, Serializable{
 
+    private static final long serialVersionUID = -5336508530371378475L;
+
     // private static instance of Student type using lazy initialization
     private static Student student = null;
 
@@ -72,10 +74,12 @@ public class Student implements Cloneable, Serializable{
         System.out.println("Serialization & Deserialization:");
         Student student3 = getInstance();
         System.out.println("Hashcode of Student3 Object: " + student3.hashCode());
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("abc.txt"));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("abc.ser"));
         oos.writeObject(student3);
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("abc.txt"));
+        oos.close();
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("abc.ser"));
         Student student4 = (Student) ois.readObject();
+        ois.close();
         System.out.println("Hashcode of Student4 Object: " + student4.hashCode());
 
         System.out.println("##################################################################");
