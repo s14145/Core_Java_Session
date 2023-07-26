@@ -23,9 +23,9 @@ public class Student implements Cloneable, Serializable{
     }
 
     /**
-     * This is a static method that returns Student Singleton class
+     * This is a static method that returns Student Singleton class instance
      *
-     * @return Student Singleton class
+     * @return Student Singleton class instance
      */
     public static Student getInstance(){
         if(student == null){
@@ -42,7 +42,7 @@ public class Student implements Cloneable, Serializable{
     /**
      * This non-static method prevents violating singleton design pattern using deserialization
      *
-     * @return Object Singleton class
+     * @return Object Singleton class instance
      */
     public Object readResolve(){
         return student;
